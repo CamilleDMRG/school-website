@@ -1,33 +1,3 @@
-
-/*
-// need to rename the file as 'server.cjs' or use inport istead of require for it to run because my node version (v22.11.0) give following error message :
-//ReferenceError: require is not defined in ES module scope, you can use import instead
-//This file is being treated as an ES module because it has a '.js' file extension and 'package.json' contains "type": "module".
-//To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
-const mysql = require('mysql');
-const express = require('express');
-const jwt = require('jsonwebtoken');
-const app = express();
-
-app.use(express.json());
-
-const con = mysql.createConnection({
-host: 'localhost',
-user: 'root',
-password:'Cdom2004'
-});
-
-con.connect(function(err) {
-    if(err) throw err;
-    console.log("Connected");
-});*/
-
-// use mysql2 instead of mysql because my current SQL give the following error message
-//code: 'ER_NOT_SUPPORTED_AUTH_MODE',
-//errno: 1251,
-//sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
-//sqlState: '08004',
-//fatal: true
 import mysql from 'mysql2';
 import express from 'express';
 import jwt from 'jsonwebtoken';
@@ -36,8 +6,8 @@ const app = express();
 const port = 3000;
 
 //enter YOUR OWN sql connection credential
-const SqlUsername = 'root';
-const SqlPassword = 'Cdom2004';
+const SqlUsername = '';
+const SqlPassword = '';
 
 const con = mysql.createConnection({
     host: 'localhost',
