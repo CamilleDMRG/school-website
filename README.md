@@ -148,8 +148,5 @@ project-directory/
    - Admins can manage users and courses.
 
 
-## License
-This project is licensed under the MIT License.
-
 
 
