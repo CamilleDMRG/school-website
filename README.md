@@ -151,23 +151,5 @@ project-directory/
 ## License
 This project is licensed under the MIT License.
 
----
 
-## Contributors
-### [Camille Dommergue] - Developer
-   - Dashboards creation
-   - Components main logic creation
-   - Database creation
-   - Endpoints creation
-   - SQL request, encryption, hashing, token implementation --> server.js setup
-   - Routing
-   - Functions: Create, Edit, Message, Search, Delete, Login, Logout, SendMessage
-
-
-### [Alexandre Mariotte] - Developer
-  - Functions of courses selections, Add and Delete for the students courses management
-  - Routes exception management
-  - Mail deletion management and SQL management for the mail list
-  - Readme
-  - Various bug fixes and logic corrections
 
